@@ -35,6 +35,7 @@ app.use('/api/users', require('./routes/users'));
 app.use('/api/groups', require('./routes/groups'));
 app.use('/api/events', require('./routes/events'));
 app.use('/api/messages', require('./routes/messages'));
+app.use('/api/password', require('./routes/password-reset'));
 
 // Root route
 app.get('/', (req, res) => {

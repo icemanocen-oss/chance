@@ -64,6 +64,18 @@ const userSchema = new mongoose.Schema({
     showAge: { type: Boolean, default: true },
     showLocation: { type: Boolean, default: true }
   },
+  // ========================================
+  // НОВЫЕ ПОЛЯ ДЛЯ ВОССТАНОВЛЕНИЯ ПАРОЛЯ
+  // ========================================
+  resetPasswordToken: {
+    type: String,
+    default: null
+  },
+  resetPasswordExpires: {
+    type: Date,
+    default: null
+  },
+  // ========================================
   createdAt: {
     type: Date,
     default: Date.now
